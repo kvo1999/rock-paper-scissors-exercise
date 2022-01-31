@@ -9,19 +9,22 @@
 # ask for a user input 
 
 userchoice = input(" Please choose one: 'Rock', 'Paper', or 'Scissors'? ")
-userchoice.lower
 print("User chose", userchoice)
 
 # validate the user input
 if userchoice.lower != "rock" or "paper" or "scissors":
-    print("Please enter a valid input.") and quit()
+     print("Please enter a valid input.")
+     quit()
+else:
+    print("Opponent will now choose")
 
 # computer choice
-import random
+from random import choice
 options = ["Rock","Paper","Scissors"]
-computer_choice = random.choice(options)
+computer_choice = choice(options)
 print("Computer chose:", computer_choice)
 
 # determine the winner
+
 
 # display the final results 
