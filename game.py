@@ -12,7 +12,7 @@ userchoice = input(" Please choose one: 'Rock', 'Paper', or 'Scissors'? ")
 print("User chose", userchoice)
 
 # validate the user input
-if userchoice != "rock" or userchoice != "paper" or userchoice != "scissors":
+if (userchoice != "rock") or (userchoice != "paper") or (userchoice != "scissors"):
      print("Please enter a valid input.")
      quit()
 else:
