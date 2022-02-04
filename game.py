@@ -3,7 +3,7 @@
 #challenge 1- Environment variables 
 import os
 
-player_name = os.getenv("PLAYER_NAME", default="Player One")
+player_name = os.getenv("player_name", default="Player One")
 
 print("----------")
 print(f"Welcome {player_name} to my Rock-Paper-Scissors game!")
@@ -21,6 +21,7 @@ else:
     print("Please chooose a valid input.")
     quit()
 
+#Prof Rossetti's code in class helped me with this part!
 # computer choice
 from random import choice
 options = ["Rock","Paper","Scissors"]
@@ -33,6 +34,10 @@ print("----------")
 #Nikita's code that she posted in Slack helped me out!
 
 computer_choice = computer_choice.lower()
+
+#challenge 2
+#def determine_winner(userchoice, computer_choice):
+#return 
 
 #user chose paper 
 if userchoice == "paper" and computer_choice == "rock":
