@@ -6,8 +6,13 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
+#challenge 1
+import os
+
+player_name = os.getenv("PLAYER_NAME", default="Player One")
+
 print("----------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game!")
+print(f"Welcome {player_name} to my Rock-Paper-Scissors game!")
 print("----------")
 # ask for a user input 
 
@@ -35,7 +40,7 @@ print("----------")
 
 computer_choice = computer_choice.lower()
 
-#user chose paper
+#user chose paper 
 if userchoice == "paper" and computer_choice == "rock":
     print("You are the winner! :)")
 elif userchoice == "paper" and computer_choice == "scissors":

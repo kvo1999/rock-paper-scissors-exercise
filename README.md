@@ -21,6 +21,8 @@ Install package dependencies (mainly for testing):
 ```sh
 pip install -r requirements.txt
 ```
+## Pass environment variable 
+PLAYER_NAME="Jon Snow" python game.py
 
 ## Usage
 
