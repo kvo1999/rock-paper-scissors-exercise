@@ -22,8 +22,9 @@ Install package dependencies (mainly for testing):
 pip install -r requirements.txt
 ```
 ## Pass environment variable 
-if you'd like to change your player name in the game, set an environemnt variable before running
-player_name="Jon Snow" python game.py
+if you'd like to change your player name in the game, set an environemnt variable before running:
+
+```player_name="Jon Snow" python game.py
 
 if you'd don't do this, the game will default you as "player one" 
 
